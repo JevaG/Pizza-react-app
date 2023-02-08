@@ -21,24 +21,23 @@ function Home() {
                 setErrorMessage("Unable to fetch item list");
                 setIsLoading(true);
             });
+        window.scrollTo(0, 0);
     }, []);
     return (
-        <>
-            <div className="container">
-                <div className="content__top">
-                    <Categories />
-                    <Sort />
-                </div>
-                <h2 className="content__title">Все пиццы</h2>
-                <div className="content__items">
-                    {isLoading
-                        ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
-                        : data.map((pizzaItem) => (
-                            <PizzaBlock key={pizzaItem.id} {...pizzaItem} />
-                        ))}
-                </div>
+        <div className="container">
+            <div className="content__top">
+                <Categories />
+                <Sort />
             </div>
-        </>
+            <h2 className="content__title">Все пиццы</h2>
+            <div className="content__items">
+                {isLoading
+                    ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
+                    : data.map((pizzaItem) => (
+                        <PizzaBlock key={pizzaItem.id} {...pizzaItem} />
+                    ))}
+            </div>
+        </div>
     );
 }
 
