@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-function Sort() {
+function Sort({ value, onClickSort }) {
   const [collapseDropdown, setCollapseDropdown] = useState(false);
-  const [isActiveSort, setIsActiveSort] = useState(0);
+  // const [isActiveSort, setIsActiveSort] = useState(0);
 
-  const sortList = ["популярности", "цене", "алфавиту"];
-  const sortName = sortList[isActiveSort];
+  const sortList = [
+    { name: 'популярности', sortProperty:"rating" },
+    { name: 'цена', sortProperty: 'price' },
+    { name : "алфавиту", sortProperty: 'title' }
+  ];
 
-  const onClickSelected = (i) => {
-    setIsActiveSort(i);
-    setCollapseDropdown(false);
-  };
+
   return (
     <div className="sort">
       <div className="sort__label">
@@ -33,19 +33,23 @@ function Sort() {
             setCollapseDropdown(!collapseDropdown);
           }}
         >
-          {sortName}
+          {value.name}
         </span>
       </div>
       {collapseDropdown && (
         <div className="sort__popup">
           <ul>
-            {sortList.map((sortListItem, i) => (
+            {sortList.map((obj, i) => (
               <li
                 key={i}
-                className={isActiveSort === i ? "active" : ""}
-                onClick={() => onClickSelected(i)}
+                onClick={
+                  () => {onClickSort(obj)
+                  setCollapseDropdown(false)
+                  }
+                }
+                className={value.sortProperty === obj.sortProperty ? "active" : ""}
               >
-                {sortListItem}
+                {obj.name}
               </li>
             ))}
           </ul>

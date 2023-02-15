@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-const pizzaDensity = ["тонкое", "традиционное"];
 
 function PizzaBlock({ title, price, imageUrl, sizes, types }) {
   const [sizeActive, setSizeActive] = useState(0);
