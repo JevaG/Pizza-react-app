@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec5e42b-442e-49c7-82b6-4dd44a58842a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/search-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
     </list>
@@ -87,7 +87,7 @@
       <workItem from="1677060987515" duration="9043000" />
       <workItem from="1677599228570" duration="402000" />
       <workItem from="1677599647700" duration="4313000" />
-      <workItem from="1677754124557" duration="2109000" />
+      <workItem from="1677754124557" duration="8603000" />
     </task>
     <servers />
   </component>

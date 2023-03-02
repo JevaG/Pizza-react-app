@@ -11,6 +11,11 @@
     border: 1px solid rgba(0,0,0,0.5);
   }
 
+  @media (max-width: 1334px ) {
+    display: flex;
+    width: 200px;
+  }
+
 }
 
 .root {
