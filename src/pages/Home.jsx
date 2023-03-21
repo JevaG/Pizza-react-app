@@ -8,8 +8,9 @@ import Pagination from "../components/Pagination/Pagination";
 
 
 import { SearchContext } from "../search-context";
+
 function Home() {
-    const {searchValue, setSearchValue} = useContext(SearchContext)
+    const {searchValue} = useContext(SearchContext)
 
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function Home() {
 // &sortBy=${sortId.sortProperty}&order=desc
 
     const search = searchValue ? `&search = ${searchValue}` : '';
+
     useEffect(() => {
         setIsLoading(true);
         console.log(categoryId, 'categoryId')
@@ -68,3 +70,7 @@ function Home() {
 }
 
 export default Home;
+
+
+
+

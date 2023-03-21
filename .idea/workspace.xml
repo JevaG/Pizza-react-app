@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec5e42b-442e-49c7-82b6-4dd44a58842a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,6 +86,14 @@
       <workItem from="1677599228570" duration="402000" />
       <workItem from="1677599647700" duration="4313000" />
       <workItem from="1677754124557" duration="8603000" />
+      <workItem from="1677877622612" duration="2773000" />
+      <workItem from="1678643059245" duration="937000" />
+      <workItem from="1678645568982" duration="10381000" />
+      <workItem from="1678872760196" duration="2118000" />
+      <workItem from="1678906340283" duration="1376000" />
+      <workItem from="1678955677857" duration="3467000" />
+      <workItem from="1678986841117" duration="2011000" />
+      <workItem from="1679395385345" duration="4491000" />
     </task>
     <servers />
   </component>
