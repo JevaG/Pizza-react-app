@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aec5e42b-442e-49c7-82b6-4dd44a58842a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/slices/filterSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +54,7 @@
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux/slices" />
       <recent name="$PROJECT_DIR$/src/components/PizzaBlock" />
       <recent name="$PROJECT_DIR$/src/components/NotFound" />
       <recent name="$PROJECT_DIR$/src/components/Categories" />
@@ -93,7 +98,8 @@
       <workItem from="1678906340283" duration="1376000" />
       <workItem from="1678955677857" duration="3467000" />
       <workItem from="1678986841117" duration="2011000" />
-      <workItem from="1679395385345" duration="4491000" />
+      <workItem from="1679395385345" duration="9047000" />
+      <workItem from="1679476626717" duration="9583000" />
     </task>
     <servers />
   </component>

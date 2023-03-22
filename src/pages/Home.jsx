@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import  { useSelector, useDispatch } from 'react-redux';
 
 import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort";
@@ -6,17 +7,23 @@ import Skeleton from "../components/Skeleton";
 import PizzaBlock from "../components/PizzaBlock/PizzaBlock";
 import Pagination from "../components/Pagination/Pagination";
 
+import {setCategoryId, setSortId} from "../redux/slices/filterSlice";
 
 import { SearchContext } from "../search-context";
 
 function Home() {
-    const {searchValue} = useContext(SearchContext)
+    const {searchValue} = useContext(SearchContext);
+
+    const categoryId = useSelector((state) => state.filters.categoryId);
+    const sortId = useSelector((state) => state.filters.sortId.sortProperty);
+
+    const dispatch = useDispatch();
+
 
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const [categoryId, setCategoryId] = useState(0);
-    const [sortId, setSortId] = useState({name: 'популярности', sortProperty:"rating" });
+    // const [sortId, setSortId] = useState({name: 'популярности', sortProperty:"rating" });
 
     const skeleton = [...new Array(6)].map((_, index) => (
         <Skeleton key={index} />
@@ -38,7 +45,7 @@ function Home() {
 
     useEffect(() => {
         setIsLoading(true);
-        console.log(categoryId, 'categoryId')
+
         fetch(`https://632a346c713d41bc8e6c260d.mockapi.io/items?page=${currentPage}&limit=4${categoryQuery}${search}`)
             .then((response) => response.json())
             .then((response) => {
@@ -55,8 +62,8 @@ function Home() {
     return (
         <div className="container">
             <div className="content__top">
-                <Categories value={categoryId} onClickCategories={(i) => {setCategoryId(i)}} />
-                <Sort value={sortId} onClickSort={(i)=>{setSortId(i)}}/>
+                <Categories value={categoryId} onClickCategories={(i) => dispatch(setCategoryId(i))} />
+                <Sort />
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">

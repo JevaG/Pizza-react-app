@@ -1,14 +1,20 @@
 import { useState } from "react";
+import {useDispatch, useSelector} from "react-redux";
 
-function Sort({ value, onClickSort }) {
+import {setSortId} from "../redux/slices/filterSlice";
+
+const sortList = [
+  { name: 'популярности', sortProperty:"rating" },
+  { name: 'цена', sortProperty: 'price' },
+  { name : "алфавиту", sortProperty: 'title' }
+];
+
+function Sort() {
+
   const [collapseDropdown, setCollapseDropdown] = useState(false);
-  // const [isActiveSort, setIsActiveSort] = useState(0);
 
-  const sortList = [
-    { name: 'популярности', sortProperty:"rating" },
-    { name: 'цена', sortProperty: 'price' },
-    { name : "алфавиту", sortProperty: 'title' }
-  ];
+  const dispatch = useDispatch();
+  const sortId = useSelector((state) => state.filters.sortId);
 
 
   return (
@@ -33,7 +39,7 @@ function Sort({ value, onClickSort }) {
             setCollapseDropdown(!collapseDropdown);
           }}
         >
-          {value.name}
+          {sortId.name}
         </span>
       </div>
       {collapseDropdown && (
@@ -43,11 +49,12 @@ function Sort({ value, onClickSort }) {
               <li
                 key={i}
                 onClick={
-                  () => {onClickSort(obj)
+                  () => {
+                  dispatch(setSortId(obj))
                   setCollapseDropdown(false)
                   }
                 }
-                className={value.sortProperty === obj.sortProperty ? "active" : ""}
+                className={sortId.sortProperty === obj.sortProperty ? "active" : ""}
               >
                 {obj.name}
               </li>
